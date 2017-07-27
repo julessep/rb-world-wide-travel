@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WWT</title>
+</head>
+<body ng-app ="app">
+
+
+  <div ng-controller="GuideController">
+    <h1>Guide Books</h1>
+      <div ng-repeat= "guides in guideList">
+        <h3>{{guides.title}}</h3>
+         <p>({{guides.type}})</p> 
+         <p>${{guides.price}}</p>
+      </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/bookCtrl.js"></script>
+</body>
+</html>
